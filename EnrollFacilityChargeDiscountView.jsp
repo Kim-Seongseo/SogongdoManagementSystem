@@ -40,10 +40,10 @@
 		<input type="button" onclick="history.back()" value="취소">
 	</div>
 	</form> --%>
-	<form action="/Sogongdo/facilityCharge/enroll" method="POST">
-		<input type="text" name="touristSite"><br>
-		<input type="text" name="facility"><br>
-		<input type="text" name="charge"><br>
+	<form action="/Sogongdo/facilityCharge/discount/enroll" method="POST">
+		<input type="text" name="chargeID"><br>
+		<input type="text" name="discountReason"><br>
+		<input type="text" name="discountRate"><br>
 		<input type="submit" value="등록">
 		<input type="button" onclick="history.back()" value="취소">
 	</form>

@@ -7,10 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/Sogongdo/facilityCharge/update" method="POST">
-		<input type="text" name="touristSite"><br>
-		<input type="text" name="facility"><br>
-		<input type="text" name="charge"><br>
+	<form action="/Sogongdo/facilityCharge/discount/update" method="POST">
+		<input type="text" name="discountReason"><br>
+		<input type="text" name="discountRate"><br>
 		<input type="submit" value="수정">
 		<input type="button" onclick="history.back()" value="취소">
 	</form>
