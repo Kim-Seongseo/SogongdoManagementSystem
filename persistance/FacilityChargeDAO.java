@@ -30,7 +30,7 @@ public class FacilityChargeDAO {
 		Statement st = null;
 		ResultSet rs = null;
 		String sql = "select Charge_ID, Tourist_Site_Name, Facilities_Name, Charge from tourist_site, facilities, facilities_charge "
-				+"where tourist_site.Tourist_Site_ID=facilities_charge.Tourist_Site_ID and facilities.Facilities_ID=facilities_charge.Facilities_ID";
+				+"where tourist_site.Tourist_Site_ID=facilities_charge.Tourist_Site_ID and facilities.Facilities_ID=facilities_charge.Facilities_ID order by Tourist_Site_Name";
 		ArrayList<FacilityChargeDTO> articles = new ArrayList<FacilityChargeDTO>();
 		try {
 			conn = ds.getConnection();

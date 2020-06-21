@@ -41,9 +41,9 @@
 	</div>
 	</form> --%>
 	<form action="/Sogongdo/facilityCharge/enroll" method="POST">
-		<input type="text" name="touristSite"><br>
-		<input type="text" name="facility"><br>
-		<input type="text" name="charge"><br>
+		<label>관광지ID </label><input type="text" name="touristSite"><br>
+		<label>시설ID </label><input type="text" name="facility"><br>
+		<label>요금 </label><input type="text" name="charge"><br>
 		<input type="submit" value="등록">
 		<input type="button" onclick="history.back()" value="취소">
 	</form>

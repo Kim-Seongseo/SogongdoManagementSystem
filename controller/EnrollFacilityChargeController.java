@@ -22,7 +22,7 @@ public class EnrollFacilityChargeController extends HttpServlet{
 		int touristSite = Integer.parseInt(req.getParameter("touristSite"));
 		int facility = Integer.parseInt(req.getParameter("facility"));
 		int charge = Integer.parseInt(req.getParameter("charge"));
-		
+
 		FacilityChargeDAO.insert(touristSite, facility, charge);
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/facilityCharge/display");

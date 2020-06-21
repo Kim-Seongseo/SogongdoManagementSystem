@@ -47,17 +47,27 @@ table {
 	
 	<script>
 	function mySubmit(index) {
-		if(index==1){
-			document.selectItem.action="/Sogongdo/facilityCharge/discount/update";
+		var checkRadio = document.getElementsByName('chargeID');
+		var count = 0;
+		for(var i=0; i<checkRadio.length; i++){
+			if(checkRadio[i].checked == true) count++;
 		}
-		if(index==2){
-			if (confirm("정말 삭제하시겠습니까?") == true){
-				document.selectItem.action="/Sogongdo/facilityCharge/discount/delete";
-			}else{
-				return false;
+		if(count > 0){
+			if(index==1){
+				document.selectItem.action="/Sogongdo/facilityCharge/discount/update";
 			}
+			if(index==2){
+				if (confirm("정말 삭제하시겠습니까?") == true){
+					document.selectItem.action="/Sogongdo/facilityCharge/discount/delete";
+				}else{
+					return false;
+				}
+			}
+			document.selectItem.submit();
 		}
-		document.selectItem.submit();
+		else{
+			alert("항목을 체크하세요.");
+		}
 	}
     </script>
 </body>
